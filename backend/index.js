@@ -12,9 +12,13 @@ const app = express();
 
 app.use(cors(
     {
-        origin: 'http://localhost:5173',
+        // origin: 'http://localhost:5173',
+        // method: ['GET', 'POST', 'PUT', 'DELETE'],
+        // allowHeaders: ['Content-Type']
+        origin: ["https://deploy-mern-1whq.vercel.app"],
         method: ['GET', 'POST', 'PUT', 'DELETE'],
-        allowHeaders: ['Content-Type']
+        allowHeaders: ['Content-Type'],
+        credentials: true
     }
 ))
 
