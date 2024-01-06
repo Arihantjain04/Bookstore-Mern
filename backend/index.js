@@ -15,7 +15,7 @@ app.use(cors(
         // origin: 'http://localhost:5173',
         // method: ['GET', 'POST', 'PUT', 'DELETE'],
         // allowHeaders: ['Content-Type']
-        origin: ["https://deploy-mern-1whq.vercel.app"],
+        origin: ["https://bookstore-mern-ten.vercel.app"],
         method: ['GET', 'POST', 'PUT', 'DELETE'],
         allowHeaders: ['Content-Type'],
         credentials: true
