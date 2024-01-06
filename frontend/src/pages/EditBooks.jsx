@@ -17,7 +17,7 @@ const EditBooks = () => {
 
   useEffect(() => {
     setLoading(true)
-    axios.get(`http://localhost:5557/books/${id}`)
+    axios.get(`https://bookstore-app-mern.vercel.app/books/${id}`)
     .then((res) => {
       setTitle(res.data.title)
       setAuthor(res.data.author)
