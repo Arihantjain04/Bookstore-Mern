@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5557/books")
+      .get("https://bookstore-app-mern.vercel.app/books")
       .then((res) => {
         setBooks(res.data.data);
         setLoading(false);
