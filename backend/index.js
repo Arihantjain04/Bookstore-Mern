@@ -24,7 +24,10 @@ app.use(cors(
 
 app.use(express.json())
 
+app.options('/books', cors());
+
 app.get("/", (req, res) => {
+    res.header("Access-Control-Allow-Origin", "https://bookstore-mern-ten.vercel.app");
     res.send("HELLO WELCOME TO HOME PAGE !!!")
 });
 
