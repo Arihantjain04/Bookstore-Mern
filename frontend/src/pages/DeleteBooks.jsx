@@ -23,7 +23,7 @@ const DeleteBooks = () => {
     .catch((error) => {
       console.log(error);
       setLoading(false)
-      enqueueSnackbar("An Error Occured !!!", { variant: 'error' });
+      enqueueSnackbar("An Error Has Occured, Pls Check !!!", { variant: 'error' });
     })
   }
   return (
