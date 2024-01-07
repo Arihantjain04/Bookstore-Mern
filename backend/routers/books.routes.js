@@ -82,7 +82,7 @@ router.put('/:id', async (req, res) => {
 
         const { id } = req.params
 
-        const result = await Book.findByIdAndUpdate(id, req.body)
+        const result = await Book.findByIdAndUpdate(id)
 
         if(!result){
             return res.status(404).json({message: "Book not found"})
