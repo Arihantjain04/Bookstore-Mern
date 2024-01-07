@@ -48,7 +48,7 @@ const EditBooks = () => {
       .catch((error) => {
         setLoading(false);
         console.log(error);
-        enqueueSnackbar("An Error Occured !!!", { variant: 'error' });
+        enqueueSnackbar("An Error Has Occured !!!", { variant: 'error' });
       });
   };
 
